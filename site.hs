@@ -18,7 +18,7 @@ main = hakyll $ do
         let compressCssItem = fmap compressCss
         compile (compressCssItem <$> S.sassCompiler)
 
-    match (fromList ["about.md", "member.md"]) $ do
+    match (fromList ["about.md"]) $ do
         route   $ setExtension "html"
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
@@ -45,6 +45,11 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    match "member.html" $ do
+        route   idRoute
+        compile $ getResourceBody
+            >>= loadAndApplyTemplate "templates/default.html" defaultContext
+            >>= relativizeUrls
 
     match "index.html" $ do
         route   idRoute
