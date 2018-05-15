@@ -1,4 +1,5 @@
-html{display:flex;justify-content:center;font-size:62.5%;font-family:"Mplus 1p";background-color:#333333}body{width:960px;font-size:1.4rem;color:#f9f9fa}article{color:#222222;background-color:#f9f9fa;margin:1rem;padding:1rem;border-radius:1rem}article a{color:#333333}footer{margin-top:5.0rem;color:#FEFEFE;font-weight:900;text-align:center}img{width:100%}a{color:#FEFEFE}.title{margin-top:1rem;margin-bottom:1rem;text-align:center;font-weight:900}.logo a{color:#FEFEFE;font-weight:900}@media screen and (min-width:600px){article{margin:3rem;padding:3rem;border-radius:1rem}.title{margin-top:3rem;margin-bottom:3rem}}.namefeed{margin-bottom:3rem}.selif-box p{margin-top:1rem;margin-left:1rem}.selif-box p:before,.selif-box p:after{content:"\"";
+h1,h2,h3{font-weight:400}h1:before,h2:before,h3:before{content:"# ";color:#008800;font-size:120%}html{font-size:62.5%;height:100vh;width:100vw;display:flex;justify-content:center}body{margin:0px;font-size:1.6rem;font-family:'Noto Sans Japanese',sans-serif;background-image:url(/images/forest_bg.jpg);background-position:center center;background-repeat:no-repeat;background-attachment:fixed;background-size:cover;background-color:#222222;width:900px;padding:1rem 3rem}header{margin-bottom:2.5rem;padding:2rem 4rem 2.5rem 4rem;background-color:rgba(254,254,254,0.8);color:#222222}header h1{margin:0rem;text-align:left;font-size:4.2rem;letter-spacing:-0.1rem}header h1:before{content:""}header nav{text-align:right}header nav a{color:#222222;font-weight:200;margin:0rem;margin-left:1rem}main{padding:1rem 5rem 1rem 5rem;background-color:rgba(254,254,254,0.8);color:#222222}footer{padding:1rem 5rem 1rem 5rem;margin-top:2.5rem;background-color:rgba(254,254,254,0.8);font-weight:300;text-align:center}footer a{color:#222222;display:inline}footer div{display:inline}p{font-weight:200}a{color:#004400}li{list-style:none}.namefeed{margin-bottom:3rem}.selif-box p{margin-top:1rem;margin-left:1rem}.selif-box p:before,.selif-box p:after{content:"\"";
+    color: #00AA00;
     font-weight: 900;
     font-size: 120%;
     margin-left: 0.5rem;
@@ -20,3 +21,17 @@ html{display:flex;justify-content:center;font-size:62.5%;font-family:"Mplus 1p";
 .namefeed .serif-box p {
   font-size: 1.4rem;
   margin: 1.2rem; }
+
+@media screen and (max-width: 600px) {
+  header {
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem; }
+    header nav a {
+      margin-left: 0.5rem; }
+  main {
+    padding: 0.5rem 1rem 0.5rem 1rem; }
+  footer {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 1rem; }
+  body {
+    padding: 1rem 1rem; } }
