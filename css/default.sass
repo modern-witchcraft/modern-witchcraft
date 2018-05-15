@@ -8,11 +8,21 @@ html
 body
   width: 960px
   font-size: 1.4rem
-  color: #CCCCCC
+  color: rgb(249,249,250)
+
+article 
+  color: #222222
+  background-color: rgb(249,249,250)
+  margin: 1rem
+  padding: 1rem
+  border-radius: 1rem
+
+article a
+  color: #333333
 
 footer
   margin-top: 5.0rem
-  color: #CCCCCC
+  color: #FEFEFE
   font-weight: 900
   text-align: center
 
@@ -20,25 +30,40 @@ img
   width: 100%
 
 a
-  color: #CCCCCC
+  color: #FEFEFE
 
 .title
-  margin-top:    1.0rem 
-  margin-bottom: 1.0rem 
+  margin-top:    1rem 
+  margin-bottom: 1rem 
   text-align:    center
   font-weight:   900
 
 .logo a
-  color: #CCCCCC
+  color: #FEFEFE
   font-weight: 900
 
 @media screen and (min-width: 600px)
+  article 
+    margin: 3rem
+    padding: 3rem
+    border-radius: 1rem
+
   .title
-    margin-top:    5.0rem 
-    margin-bottom: 10.0rem 
+    margin-top:    3rem 
+    margin-bottom: 3rem 
 
 .namefeed
-  margin-bottom: 7rem
+  margin-bottom: 3rem
+
+.selif-box p
+  margin-top: 1rem
+  margin-left: 1rem
+  &:before, &:after
+    content: "\""
+    font-weight: 900
+    font-size: 120%
+    margin-left: 0.5rem
+    margin-right: 0.5rem
 
 .namefeed .head
   display: flex

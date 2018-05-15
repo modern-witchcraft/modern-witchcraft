@@ -1,11 +1,9 @@
-<article>
-    <section class="header">
-        $date$
-        $if(author)$
-            by $author$
-        $endif$
-    </section>
-    <section>
-        $body$
-    </section>
-</article>
+<section class="header">
+    <time>date: $date$<time>
+    $if(author)$
+        by $author$
+    $endif$
+</section>
+<section>
+    $body$
+</section>
